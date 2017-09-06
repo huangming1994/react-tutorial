@@ -69,25 +69,15 @@ redux是单向数据流，架构图如下：
 
 #### Store
  action 来描述“发生了什么”，reducer 来根据 action 更新 state，store 就是把它们联系到一起的对象，整个应用就是靠store来共享数据，通过 createStore 来创建store对象。  
- ```javascript
-export default function createStore(reducer, initialState) {
-  // ...
-  return {
-    dispatch,
-    subscribe,
-    getState,
-    replaceReducer
-  }
-}
-```
-store具有以下四个方法。
+ 
+store对象具有以下四个方法。
  * store.dispatch(action)：分发action
  * store.subscribe(listener)：注册listener，store里面state发生改变后，执行该listener
  * store.getState()：读取store里面的state
  * store.replaceReducer(nextReducer)： 替换reducer，改变state修改的逻辑
  
  创建一个store对象如下：
-   ```javascript
+```javascript
 const store = createStore(reducers, preloadedState, enhancer)
 ```
 * reducers：总的reducers，开始讲到reducer的时候，还记得每个页面都有个reducer，那如果有十个页面，就有十个reducer，但是createStore的第一个参数只能是一个总的reducers,所以我们得合并每个页面的reducer，别担心，redux提供了combineReducers方法，返回的reducers就是createStore的第一个参数。
