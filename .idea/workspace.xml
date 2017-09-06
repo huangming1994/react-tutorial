@@ -86,11 +86,31 @@
         <entry file="file://$PROJECT_DIR$/src/redux/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="87">
-                <caret line="3" column="98" lean-forward="false" selection-start-line="3" selection-start-column="98" selection-end-line="3" selection-end-column="98" />
-                <folding />
+              <first_editor relative-caret-position="451">
+                <caret line="100" column="2" lean-forward="true" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="2" />
+                <folding>
+                  <marker date="1504692088000" expanded="true" signature="684:729" ph="{...}" />
+                  <marker date="1504692088000" expanded="true" signature="1240:1267" ph="{...}" />
+                  <marker date="1504692088000" expanded="true" signature="1322:1487" ph="{...}" />
+                  <marker date="1504692088000" expanded="true" signature="1349:1484" ph="{...}" />
+                  <marker date="1504692088000" expanded="true" signature="1373:1442" ph="..." />
+                  <marker date="1504692088000" expanded="true" signature="1457:1478" ph="..." />
+                  <marker date="1504692088000" expanded="true" signature="1692:1781" ph="{...}" />
+                  <marker date="1504692088000" expanded="true" signature="1712:1779" ph="{&quot;dispatch&quot;: dispatch...}" />
+                  <marker date="1504692088000" expanded="true" signature="2334:2426" ph="{...}" />
+                </folding>
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createStore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/redux/lib/createStore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="50" column="56" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,7 +139,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>replaceReducer</find>
+      <find>ActionTypes.INIT</find>
+      <find>@@redux/INIT</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/../CPICLife/CPICLife/src/</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -324,7 +349,8 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="javascript.nodejs.core.library.configured.version" value="7.6.0" />
-    <property name="SearchEverywhereHistoryKey" value="createS&#9;FILE&#9;file:///Users/HM/Desktop/react-tutorial/node_modules/redux/lib/createStore.js" />
+    <property name="SearchEverywhereHistoryKey" value="cre&#9;FILE&#9;file:///Users/HM/Desktop/react-tutorial/node_modules/redux/lib/createStore.js&#10;cr&#9;FILE&#9;file:///Users/HM/Desktop/react-tutorial/node_modules/redux/lib/createStore.js&#10;createS&#9;FILE&#9;file:///Users/HM/Desktop/react-tutorial/node_modules/redux/lib/createStore.js" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/redux/lib/createStore.js" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -420,25 +446,26 @@
       <option name="presentableId" value="Default" />
       <updated>1504574289509</updated>
       <workItem from="1504574291126" duration="6475000" />
-      <workItem from="1504600045382" duration="15984000" />
+      <workItem from="1504600045382" duration="28256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22459000" />
+    <option name="totallyTimeSpent" value="34731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -446,7 +473,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -704,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux/lib/createStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="201" column="25" lean-forward="false" selection-start-line="201" selection-start-column="11" selection-end-line="201" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -746,12 +764,46 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/redux/dist/redux.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4312" lean-forward="false" selection-start-line="0" selection-start-column="4312" selection-end-line="0" selection-end-column="4312" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/redux/dist/redux.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="433" column="12" lean-forward="false" selection-start-line="433" selection-start-column="4" selection-end-line="433" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/redux/lib/createStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="50" column="56" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="87">
-            <caret line="3" column="98" lean-forward="false" selection-start-line="3" selection-start-column="98" selection-end-line="3" selection-end-column="98" />
-            <folding />
+          <first_editor relative-caret-position="451">
+            <caret line="100" column="2" lean-forward="true" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="2" />
+            <folding>
+              <marker date="1504692088000" expanded="true" signature="684:729" ph="{...}" />
+              <marker date="1504692088000" expanded="true" signature="1240:1267" ph="{...}" />
+              <marker date="1504692088000" expanded="true" signature="1322:1487" ph="{...}" />
+              <marker date="1504692088000" expanded="true" signature="1349:1484" ph="{...}" />
+              <marker date="1504692088000" expanded="true" signature="1373:1442" ph="..." />
+              <marker date="1504692088000" expanded="true" signature="1457:1478" ph="..." />
+              <marker date="1504692088000" expanded="true" signature="1692:1781" ph="{...}" />
+              <marker date="1504692088000" expanded="true" signature="1712:1779" ph="{&quot;dispatch&quot;: dispatch...}" />
+              <marker date="1504692088000" expanded="true" signature="2334:2426" ph="{...}" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
