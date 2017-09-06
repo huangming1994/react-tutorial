@@ -130,5 +130,25 @@ function multiAction(payload) {
   ]
 }
 ```
-像上面这些情况，如果直接dispatch这些action，会得到一个报错<a style="color:red;">Actions must be plain objects.<a/>
-这时候就需要对应的中间件去解决这些特殊的action，它提供的是位于action被发起之后，到达reducer之前的扩展点。
+像上面这些情况，如果直接dispatch这些action，会得到一个报错`Actions must be plain objects`，因为并不是直接返回的一个action对象。
+这时候就需要对应的中间件去解决这些特殊的action，其实它就是提供了位于action被发起之后，到达reducer之前的扩展。middleware最优秀的特性就是可以被链式组合，可插拔的插件机制。这里注意一点，中间件是有顺序的，比如logger中间件放最后。
+
+如何添加中间件？
+```javascript
+applyMiddleware(...middlewares)
+```
+* ...middlewares (arguments): 遵循 Redux middleware API 的函数。每个 middleware 接受 Store 的 dispatch 和 getState 函数作为命名参数，并返回一个函数。该函数会被传入 被称为 next 的下一个 middleware 的 dispatch 方法，并返回一个接收 action 的新函数，这个函数可以直接调用 next(action)，或者在其他需要的时刻调用，甚至根本不去调用它。调用链中最后一个 middleware 会接受真实的 store 的 dispatch 方法作为 next 参数，并借此结束调用链。所以，middleware 的函数签名是 ({ getState, dispatch }) => next => action。
+  
+这里可能会不太好理解，没有关系，你只要记住参数是一个一个的中间件函数，例如：
+```javascript
+const enhancer = applyMiddleware(
+  middleware1,
+  middleware2,
+  middleware3
+)
+```
+中间件创建好了，要放到哪里去呢，还记得上面怎么创建store的吗？  
+`const store = createStore(reducers, preloadedState, enhancer)`  
+这个enhancer就是中间件。所以只要当成createStore的第三个参数传入就可以了。
+
+一般中间件都有开源的第三方库，比如`redux-thunk`，`redux-promise`，`redux-logger`，当然你也可以根据自己所需场景不同，编写自定义的中间件。`middleware.js`中就包含了上述几种特殊action处理的自定义中间件编写，感兴趣的同学可以看下。
