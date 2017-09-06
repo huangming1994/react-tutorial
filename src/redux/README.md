@@ -80,6 +80,7 @@ export default function createStore(reducer, initialState) {
   }
 }
 ```
+store具有以下四个方法。
  * store.dispatch(action)：分发action
  * store.subscribe(listener)：注册listener，store里面state发生改变后，执行该listener
  * store.getState()：读取store里面的state
