@@ -102,3 +102,33 @@ const reducers = combineReducers({
 ```
 * preloadedState：第二个参数是可选的，初始状态对象，可以很随意指定，比如服务端渲染的初始状态，但是如果使用combineReducers来生成reducers，那必须保持状态对象的key和combineReducers中的key相对应。
 * enhancer：第三个参数是store的增强器函数，可以指定为第三方的中间件，时间旅行，持久化等等，但是这个函数只能用redux提供的applyMiddleware函数来生成，在稍后的middleware中会讲到。
+
+#### Middleware
+redux中的action返回的是个对象，但有时候action其实被包了一层，也许是个函数、promise或者数组，比如：
+```javascript
+// 返回的是函数
+function thunkAction(payload) {
+  return function() {
+    return { type: 'THUNK_ACTION', payload }
+  }
+}  
+// 返回的是promise
+function promiseAction() {
+  return fetch('https://facebook.github.io/react-native/movies.json')
+   .then((response) => response.json())
+   .then((responseJson) => {
+     return { type: 'PROMISE_ACTION', payload: responseJson.movies }
+   })
+}
+
+// 返回是数组
+function multiAction(payload) {
+  return [
+    { type: 'MULTIACTION_1', payload },
+    { type: 'MULTIACTION_2', payload },
+    { type: 'MULTIACTION_3', payload },
+  ]
+}
+```
+像上面这些情况，如果直接dispatch这些action，会得到一个报错<a style="color:red;">Actions must be plain objects.<a/>
+这时候就需要对应的中间件去解决这些特殊的action，它提供的是位于action被发起之后，到达reducer之前的扩展点。
