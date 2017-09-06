@@ -29,6 +29,7 @@ export function multiDispatch({ dispatch }) {
   }
 }
 
+// logger中间件
 export function logger({ getState }) {
   return next => action => {
     console.log('prev state', getState())
