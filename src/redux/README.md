@@ -143,3 +143,5 @@ const enhancer = applyMiddleware(
 这个enhancer就是中间件。所以只要当成createStore的第三个参数传入就可以了。
 
 一般中间件都有开源的第三方库，比如`redux-thunk`，`redux-promise`，`redux-logger`，当然你也可以根据自己所需场景不同，编写自定义的中间件。`middleware.js`中就包含了上述几种特殊action处理的自定义中间件编写，感兴趣的同学可以看下。
+
+#### 至此，redux整个流程应该差不多了，但这不代表在react当中就可以work了，redux只是单纯的数据管理库，如果想要让react组件都能共享拿到store数据，还得借助react-redux这个库，在下一篇中会讲到。
