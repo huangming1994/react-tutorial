@@ -7,9 +7,9 @@ redux是单向数据流，架构图如下：
 
 ### 目录结构
 ```
-- redux
+- redux    // 一个整合了redux的小demo
     | - action.js  action文件
-    | - index.js  // 一个整合了redux流程的demo
+    | - index.js   入口文件
     | - middleware.js  中间件
     | - README.md 
     | - reducer.js  reducer文件
