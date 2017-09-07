@@ -92,7 +92,7 @@ const reducers = combineReducers({
 })
 ```
 * preloadedState：第二个参数是可选的，初始状态对象，可以很随意指定，比如服务端渲染的初始状态，但是如果使用combineReducers来生成reducers，那必须保持状态对象的key和combineReducers中的key相对应。
-* enhancer：第三个参数是store的增强器函数，可以指定为第三方的中间件，时间旅行，持久化等等，但是这个函数只能用redux提供的applyMiddleware函数来生成，在稍后的middleware中会讲到。
+* enhancer：第三个参数也是可选的，是store的增强器函数，可以指定为第三方的中间件，时间旅行，持久化等等，但是这个函数只能用redux提供的applyMiddleware函数来生成，在稍后的middleware中会讲到。
 
 #### Middleware
 redux中的action返回的是个对象，但有时候action其实被包了一层，也许是个函数、promise或者数组，比如：
