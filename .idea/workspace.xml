@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5167d510-adcf-48e0-941b-fc629ec4ce10" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/README.md" afterPath="$PROJECT_DIR$/src/redux/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="171">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -82,39 +87,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redux/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="247">
-                <caret line="146" column="148" lean-forward="true" selection-start-line="146" selection-start-column="148" selection-end-line="146" selection-end-column="148" />
+              <first_editor relative-caret-position="222">
+                <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
                 <folding>
-                  <marker date="1504714598000" expanded="true" signature="684:729" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="1240:1267" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="1322:1487" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="1349:1484" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="1373:1442" ph="..." />
-                  <marker date="1504714598000" expanded="true" signature="1457:1478" ph="..." />
-                  <marker date="1504714598000" expanded="true" signature="2182:2274" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="2651:2725" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="2673:2723" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="2768:2985" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="2907:2982" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="3026:3164" ph="{...}" />
-                  <marker date="1504714598000" expanded="true" signature="3037:3162" ph="[...]" />
+                  <marker date="1504714673000" expanded="true" signature="692:737" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="1248:1275" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="1330:1495" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="1357:1492" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="1381:1450" ph="..." />
+                  <marker date="1504714673000" expanded="true" signature="1465:1486" ph="..." />
+                  <marker date="1504714673000" expanded="true" signature="2190:2282" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="2659:2733" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="2681:2731" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="2776:2993" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="2915:2990" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="3034:3172" ph="{...}" />
+                  <marker date="1504714673000" expanded="true" signature="3045:3170" ph="[...]" />
                 </folding>
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createStore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/redux/lib/createStore.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="50" column="56" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="56" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -167,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/jsx/组件.js" />
         <option value="$PROJECT_DIR$/src/redux/actions.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/redux/index.js" />
         <option value="$PROJECT_DIR$/src/redux/reducer.js" />
         <option value="$PROJECT_DIR$/src/redux/store.js" />
@@ -175,6 +169,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/redux/middleware.js" />
         <option value="$PROJECT_DIR$/src/redux/README.md" />
+        <option value="$PROJECT_DIR$/src/index.js" />
       </list>
     </option>
   </component>
@@ -312,24 +307,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="redux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-tutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-tutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -450,19 +427,19 @@
       <option name="presentableId" value="Default" />
       <updated>1504574289509</updated>
       <workItem from="1504574291126" duration="6475000" />
-      <workItem from="1504600045382" duration="33550000" />
+      <workItem from="1504600045382" duration="34559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40025000" />
+    <option name="totallyTimeSpent" value="41034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -563,9 +540,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,9 +631,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -688,16 +661,6 @@
           <caret line="20" column="1" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="8" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -795,25 +758,51 @@
     <entry file="file://$PROJECT_DIR$/src/redux/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="247">
-            <caret line="146" column="148" lean-forward="true" selection-start-line="146" selection-start-column="148" selection-end-line="146" selection-end-column="148" />
+          <first_editor relative-caret-position="222">
+            <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
             <folding>
-              <marker date="1504714598000" expanded="true" signature="684:729" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="1240:1267" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="1322:1487" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="1349:1484" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="1373:1442" ph="..." />
-              <marker date="1504714598000" expanded="true" signature="1457:1478" ph="..." />
-              <marker date="1504714598000" expanded="true" signature="2182:2274" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="2651:2725" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="2673:2723" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="2768:2985" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="2907:2982" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="3026:3164" ph="{...}" />
-              <marker date="1504714598000" expanded="true" signature="3037:3162" ph="[...]" />
+              <marker date="1504714673000" expanded="true" signature="692:737" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="1248:1275" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="1330:1495" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="1357:1492" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="1381:1450" ph="..." />
+              <marker date="1504714673000" expanded="true" signature="1465:1486" ph="..." />
+              <marker date="1504714673000" expanded="true" signature="2190:2282" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="2659:2733" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="2681:2731" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="2776:2993" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="2915:2990" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="3034:3172" ph="{...}" />
+              <marker date="1504714673000" expanded="true" signature="3045:3170" ph="[...]" />
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/registerServiceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
