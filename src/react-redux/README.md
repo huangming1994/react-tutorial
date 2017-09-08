@@ -15,10 +15,10 @@ Provider组件可以让所有经过connect()的组件都能拿到store对象，�
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
-import APP from 'APP'
+import App from 'App'
   
 ReactDOM.render(
-  <App />, // App是根组件，包括APP下的子组件都是拿不到store的
+  <App />, // App是根组件，APP下的子组件都是拿不到store的
   document.getElementById('root')
 )
 ```
@@ -26,12 +26,15 @@ ReactDOM.render(
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import APP from 'APP'
+import App from './App'
+import reducers from './reducers'
   
+const store = createStore(reducers)
 ReactDOM.render(
-  <Provider>   // 经过Provider组件包装后的App根组件，包括下面的子组件都能拿到store共享的数据。
-    <APP />
+  <Provider store={store}>   // 经过Provider组件包装后的App根组件，下面的子组件都能拿到store共享的数据。
+    <App />
   </Provider>,
   document.getElementById('root')
 )
