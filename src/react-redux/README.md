@@ -96,5 +96,14 @@ state参数，就是整个大的store.getState()全局对象，ownProps是组件
 dispatch参数，就是store.dispatch，ownProps是组件自身的props，一般也不需要传。如果传了ownProps，组件将会监听props的变化，只要组件接收到新props，mapDispatchToProps也会被调用。  
 这个函数的作用是把action经过dispatch包装，然后map到组件的props上，之前说过action都需要dispatch才能被调用，就是在这里去注入dispatch。在组件中通过`this.props.xxx`调用action。
 
+`mergeProps(stateProps, dispatchProps, ownProps)`
+可选参数，经过connect之后的组件中的props来源有三个地方，一个是mapStateToProps，一个是mapDispatchToProps，一个是组件自身的ownProps，mergeProps这个方法三个参数也分别对应，你可以自由的决定组织最终的props是什么样的，哪些舍弃，哪些合并，其实用处不大，一般都在mapStateToProps和mapDispatchToProps中map好就行了。  
+mergeProps不传的话，默认返回`Object.assign({}, stateProps, dispatchProps, ownProps)`的结果。
+
+`options`
+可选参数，是个对象。指定这个对象，可以定制一些connect的行为：
+* pure：如果为true，connect将执行shouldComponentUpdate进行浅对比mergeProps的结果，避免一些不必要的更新，默认值为true。
+* withRef： 如果为true，connect保存一个对被包装组件实例的引用，该引用通过getWrappedInstance()方法获得。默认值为false。
+
 
 
