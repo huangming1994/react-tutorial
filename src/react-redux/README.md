@@ -73,7 +73,8 @@ class Provider extends Component {
 }
 ```  
       
-`connect(mapStateToProps,mapDispatchToProps,mergeProps,options)(WrappedComponent)`
+`connect(mapStateToProps,mapDispatchToProps,mergeProps,options)(WrappedComponent)`  
+
 参数：
 * mapStateToProps
 * mapDispatchToProps
