@@ -141,5 +141,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(App)
 // connect()(App) 当然也可以两个都不传，不传mapDispatchToProps会默认给组件注入dispatch。
 ```
 
+#### 至此，react-redux的相关介绍及使用也差不多了，在redux目录下有一个小demo，里面包含了react-redux，感兴趣的同学可以看下。
+
 
 
