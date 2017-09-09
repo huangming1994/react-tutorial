@@ -91,19 +91,55 @@ class Provider extends Component {
 state参数，就是整个大的store.getState()全局对象，ownProps是组件自身的props，一般不传，如果传了，store同样会监听ownProps，组件自身props发生改变也会重新调用mapStateToProps函数。
 从名字可以看出，这个函数的作用是把state映射到组件的props上，从而可以让你在组件中通过`this.props.xxx`访问到store数据，当然你也可以取别的函数名，只是这个名字比较语义化。
  
-`mapDispatchToProps(dispatch, ownProps)`
+`mapDispatchToProps(dispatch, ownProps)`  
 可选参数，可以是个函数，也可以是个对象，一般情况都是函数，返回一个对象。如果不传，默认是`const defaultMapDispatchToProps = dispatch => ({ dispatch })`，即使不传，默认组件可以拿到this.props.dispatch。
 dispatch参数，就是store.dispatch，ownProps是组件自身的props，一般也不需要传。如果传了ownProps，组件将会监听props的变化，只要组件接收到新props，mapDispatchToProps也会被调用。  
 这个函数的作用是把action经过dispatch包装，然后map到组件的props上，之前说过action都需要dispatch才能被调用，就是在这里去注入dispatch。在组件中通过`this.props.xxx`调用action。
 
-`mergeProps(stateProps, dispatchProps, ownProps)`
+`mergeProps(stateProps, dispatchProps, ownProps)`  
 可选参数，经过connect之后的组件中的props来源有三个地方，一个是mapStateToProps，一个是mapDispatchToProps，一个是组件自身的ownProps，mergeProps这个方法三个参数也分别对应，你可以自由的决定组织最终的props是什么样的，哪些舍弃，哪些合并，其实用处不大，一般都在mapStateToProps和mapDispatchToProps中map好就行了。  
 mergeProps不传的话，默认返回`Object.assign({}, stateProps, dispatchProps, ownProps)`的结果。
 
-`options`
-可选参数，是个对象。指定这个对象，可以定制一些connect的行为：
+`options`  
+可选参数，是个对象。一般不常用，如果指定这个对象，可以定制一些connect的行为：
 * pure：如果为true，connect将执行shouldComponentUpdate进行浅对比mergeProps的结果，避免一些不必要的更新，默认值为true。
 * withRef： 如果为true，connect保存一个对被包装组件实例的引用，该引用通过getWrappedInstance()方法获得。默认值为false。
+
+给个connect的例子：
+```javascript
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+  
+class App extends Component {
+  render() {
+    return (
+      <div onClick={() => this.props.changeUserName()}>
+      {this.props.userName}
+      </div>
+    )
+  }
+}
+  
+function mapStateToProps(state) {
+  return {
+    userName: state.userName
+  }
+}
+  
+function mapDispatchToProps(dispatch) {
+  return {
+    changeUserName: () => dispatch({ type: 'CHANGE_USERNAME', payload: 'Super' })
+  }
+}
+  
+export default connect(mapStateToProps, mapDispatchToProps)(App)
+  
+//  一般情况下都传两个参数,像上面这样
+// 当然也可以只传一个，或者一个都不传，像这样：
+// connect(mapStateToProps)(App)  mapStateToProps，直接省略mapDispatchToProps参数
+// connect(null, mapDispatchToProps)(App)  只mapDispatchToProps, 省略mapStateToProps参数，由于是第一个参数，所以省略时直接传null或者undefined即可。
+// connect()(App) 当然也可以两个都不传，不传mapDispatchToProps会默认给组件注入dispatch。
+```
 
 
 
