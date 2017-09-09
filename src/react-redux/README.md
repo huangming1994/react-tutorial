@@ -73,6 +73,27 @@ class Provider extends Component {
 }
 ```  
       
-`connect([mapStateToProps],[mapDispatchToProps],[mergeProps],[options])`
+`connect(mapStateToProps,mapDispatchToProps,mergeProps,options)(WrappedComponent)`
+参数：
+* mapStateToProps
+* mapDispatchToProps
+* mergeProps
+* options
+* WrappedComponent 与connect连接的组件
+
+返回值：一个新的已与Redux store连接的组件类。
+  
+参数看起来很多很绕，connect是一个调用两次的高阶函数，第一次接收一些定制的参数，返回一个接收与store连接的组件参数，最终返回一个新的已与store连接的组件类。  
+
+`mapStateToProps(state, ownProps)`  
+可选参数，是一个函数，返回一个对象，如果不传，默认是`const defaultMapStateToProps = state => ({})`，如果传了，组件将会监听store的变化。任何时候，只要store发生改变，mapStateToProps函数就会被调用。  
+state参数，就是整个大的store.getState()全局对象，ownProps是组件自身的props，一般不传，如果传了，store同样会监听ownProps，组件自身props发生改变也会重新调用mapStateToProps函数。
+从名字可以看出，这个函数的作用是把state映射到组件的props上，从而可以让你在组件中通过`this.props.xxx`访问到store数据，当然你也可以取别的函数名，只是这个名字比较语义化。
+ 
+`mapDispatchToProps(dispatch, ownProps)`
+可选参数，可以是个函数，也可以是个对象，一般情况都是函数，返回一个对象。如果不传，默认是`const defaultMapDispatchToProps = dispatch => ({ dispatch })`，即使不传，默认组件可以拿到this.props.dispatch。
+dispatch参数，就是store.dispatch，ownProps是组件自身的props，一般也不需要传。如果传了ownProps，组件将会监听props的变化，只要组件接收到新props，mapDispatchToProps也会被调用。  
+这个函数的作用是把action经过dispatch包装，然后map到组件的props上，之前说过action都需要dispatch才能被调用，就是在这里去注入dispatch。在组件中通过`this.props.xxx`调用action。
+
 
 
