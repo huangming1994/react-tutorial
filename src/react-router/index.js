@@ -4,8 +4,13 @@ import { createBrowserHistory } from 'history'
 import ReactPage from './reactPage'
 import ReduxPage from './reduxPage'
 import RouterPage from './routerPage'
+import HomePage from './homePage'
 
 const routes = [
+  {
+    path: '/',
+    component: HomePage,
+  },
   {
     path: '/reactpage',
     component: ReactPage,
@@ -23,9 +28,8 @@ const routes = [
 const history = createBrowserHistory()
 
 const RouteWithSubRoutes = (route) => (
-  <Route path={route.path} render={props => (
-    // pass the sub-routes down to keep nesting
-    <route.component {...props} routes={route.routes}/>
+  <Route exact path={route.path} render={props => (
+    <route.component {...props} />
   )}/>
 )
 
