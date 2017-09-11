@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { Router, Route } from 'react-router-dom'
+import { Router, Route, Link } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import ReactPage from './reactPage'
 import ReduxPage from './reduxPage'
-import RouterPage from './routerPage'
 import HomePage from './homePage'
 
 const routes = [
@@ -18,10 +17,6 @@ const routes = [
   {
     path: '/reduxpage',
     component: ReduxPage,
-  },
-  {
-    path: '/routerpage',
-    component: RouterPage,
   },
 ]
 
@@ -38,6 +33,11 @@ export default class App extends Component {
     return (
       <Router history={history}>
         <div>
+          <ul>
+            <li><Link to="/">homepage</Link></li>
+            <li><Link to="/reactpage">reactPage</Link></li>
+            <li><Link to="/reduxpage">reduxPage</Link></li>
+          </ul>
           {
             routes.map((route, i) => (
               <RouteWithSubRoutes key={i} {...route} />

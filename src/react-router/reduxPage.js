@@ -5,7 +5,7 @@ export default class ReduxPage extends Component {
   render() {
     return (
       <div>
-        <h1>这是ReduxPage</h1>
+        <h3>reduxPage</h3>
         <ReduxDemo />
       </div>
     )
